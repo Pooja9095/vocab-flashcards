@@ -32,8 +32,11 @@ An optimized vocabulary flashcard web application built with React. Fetches word
 
 ## Usage
 - Run the app in development mode:
+  ```bash
   npm start
-- Open http://localhost:3000 to view it in your browser.
+  - Open the host link to view it in your browser.
+    ```bash
+    http://localhost:3000
 - Click on flashcards to reveal meanings.
 - Click "Mark as Learned" to mark a word as learned and fetch a new word.
 
