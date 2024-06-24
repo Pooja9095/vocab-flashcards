@@ -3,14 +3,22 @@ import React, { useState } from 'react';
 const Flashcard = ({ word, meaning, markAsLearned }) => {
   const [revealed, setRevealed] = useState(false);
 
-  // Add debug statement to log props
-  console.log('Flashcard props:', { word, meaning });
+  // Toggle the revealed state to show/hide the meaning
+  const handleToggle = () => {
+    setRevealed(!revealed);
+  };
+
+  // Prevent event propagation and mark the word as learned
+  const handleMarkAsLearned = (e) => {
+    e.stopPropagation();
+    markAsLearned(word);
+  };
 
   return (
-    <div className="flashcard" onClick={() => setRevealed(!revealed)}>
+    <div className="flashcard" onClick={handleToggle}>
       <h2>{word}</h2>
       {revealed && <p>{meaning}</p>}
-      <button onClick={(e) => { e.stopPropagation(); markAsLearned(word); }}>
+      <button onClick={handleMarkAsLearned}>
         Mark as Learned
       </button>
     </div>
