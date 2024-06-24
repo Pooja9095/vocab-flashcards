@@ -1,14 +1,17 @@
+/* Center align the app content and add margin */
 .App {
   text-align: center;
   margin: 20px;
 }
 
+/* Style the header with background color and padding */
 .App-header {
   background-color: #282c34;
   padding: 20px;
   color: white;
 }
 
+/* Style the flashcard with border, padding, margin, and background color */
 .flashcard {
   border: 1px solid #ccc;
   padding: 20px;
@@ -22,10 +25,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Change background color on hover for flashcard */
 .flashcard:hover {
   background-color: #e6f7ff;
 }
 
+/* Style the button inside the flashcard */
 .flashcard button {
   display: block;
   margin: 10px auto;
@@ -38,19 +43,23 @@
   transition: background-color 0.3s ease;
 }
 
+/* Change button background color on hover */
 .flashcard button:hover {
   background-color: #0056b3;
 }
 
+/* Style the learned words section */
 .learned-words {
   margin-top: 20px;
 }
 
+/* Remove list style and padding for the learned words list */
 .learned-words ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Style the list items of learned words */
 .learned-words li {
   background-color: #dff0d8;
   margin: 5px 0;
